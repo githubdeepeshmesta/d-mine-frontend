@@ -3,5 +3,5 @@ export default {
   login: "/login",
   home: "/home",
   profile: "/profile",
-  settings: "/settings",
+  settings: "/settings"
 };

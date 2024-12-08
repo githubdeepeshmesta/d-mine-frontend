@@ -1,8 +1,5 @@
-// DashboardLayoutStyle.js
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import BackgrounImage from '../../Images/MainPageImage.jpg';
-
 export const Sidebar = styled.div`
   width: 200px;
   background-color: #333;
@@ -12,36 +9,47 @@ export const Sidebar = styled.div`
   padding-top: 20px;
 `;
 
-export const SidebarLink = styled(Link)`
+export const SidebarLink = styled.button`
   color: white;
   text-decoration: none;
   padding: 10px;
   margin: 5px 0;
   border-radius: 4px;
+  background-color: #555;
+  box-shadow: 0 2px 4px 0 #9b9b9b;
   &:hover {
-    background-color: #555;
+    background-color: #fff5ee;
+    color: black;
   }
 `;
+
 export const LogoutLayout = styled.div`
-margin-top :30px
-`
+  margin-top: 30px;
+`;
+
+// Main Content Area
 export const MainContent = styled.div`
-color : 1px solid black;
+background-image: url('${BackgrounImage}'); 
   flex: 1;
   display: flex;
   flex-direction: column;
   background-color: #f4f4f4;
+  padding: 20px;
+  z-index: 10;
 `;
-export const MainContent2 = styled.div`
-display:flex;
+
+export const MainContentWrapper = styled.div`
+  display: flex;
+  width: 100%;
   background-color: #f4f4f4;
-  width: 1400px;
-  background-image: url('${BackgrounImage}'); 
-  background-size: cover;  
-  background-position: center; 
-  background-repeat: no-repeat; 
-  
+  background-image: url('${BackgrounImage}');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  z-index: 0;
 `;
+
 export const Header = styled.div`
   background-color: #222;
   color: white;

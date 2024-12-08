@@ -1,9 +1,12 @@
 import React from 'react';
+import { HomeContainer } from '../StyleComponent/HomeStyle';
 
 const Home = () => {
   return (
     <div>
-      <h2>Welcome to your Dashboard Home</h2>
+    <HomeContainer>
+    <h1>Welcome to Honnavar</h1>
+    </HomeContainer>
     </div>
   );
 };
